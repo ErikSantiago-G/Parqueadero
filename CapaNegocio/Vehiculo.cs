@@ -1,4 +1,4 @@
-﻿namespace CapaAccesoDatos
+﻿namespace CapaNegocio
 {
     public class Vehiculo   // DTO
     {
