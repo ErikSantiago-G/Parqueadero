@@ -1,4 +1,5 @@
 using CapaAccesoDatos;
+using CapaAccesoDatosMongo;
 using CapaNegocio;
 
 namespace CapaPresentacion
@@ -6,7 +7,7 @@ namespace CapaPresentacion
     public partial class Form1 : Form
     {
 
-        LogicaNegocio logica = new LogicaNegocio(new ConexionSQLServer());
+        LogicaNegocio logica = new LogicaNegocio(new ConexionMongo());
         public Form1()
         {
             InitializeComponent();
