@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CapaAccesoDatos
 {
-    public class ConexionSQLServer
+    public class ConexionSQLServer : FuenteDeDatos
     {
         private SqlConnection conexion;
 

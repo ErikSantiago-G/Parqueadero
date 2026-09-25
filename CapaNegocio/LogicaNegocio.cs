@@ -1,11 +1,14 @@
-﻿using CapaAccesoDatos;
-
-namespace CapaNegocio
+﻿namespace CapaNegocio
 {
     public class LogicaNegocio
     {
 
-        ConexionSQLServer conexion = new ConexionSQLServer();
+        FuenteDeDatos conexion;
+
+        public LogicaNegocio(FuenteDeDatos conexion)
+        {
+            this.conexion = conexion;
+        }
 
         public bool ingresarVehiculo(string placa, string tipoVehiculo)
         {
